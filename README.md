@@ -1,4 +1,4 @@
-#Asteroids
+# Asteroids
 
 A replica of the classic game "Asteroids" from the 1980's
 This version includes more interesing UFOs compared to the original, which dodge asteroids and fly after the player, moving in the same way the player would. 
