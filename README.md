@@ -1,6 +1,7 @@
 # Asteroids
 
 A replica of the classic game "Asteroids" from the 1980's
+
 This version includes more interesing UFOs compared to the original, which dodge asteroids and fly after the player, moving in the same way the player would. 
 The asteroids are also random in shape, and there are some currently incomplete features such as a mother ship boss that spawns UFOs, a friendly ship to help you, and a giant space snake.
 
