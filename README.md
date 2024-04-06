@@ -8,4 +8,4 @@ The asteroids are also random in shape, and there are some currently incomplete 
 
 
 I originally made this as a university project but have since expanded upon it. 
-I should mention this uses some coding practices I would avoid if I were to start this project again today, due to experience I have gained since as well as some questionable choices I had to make purely to meet the assignment criteria (they wanted all the entities in one list)
+I should mention this uses some coding practices I would avoid if I were to start this project again today, due to experience I have gained since as well as some questionable choices I had to make purely to meet the assignment criteria (they wanted all the entities in one list, particles GUI elements and all)
