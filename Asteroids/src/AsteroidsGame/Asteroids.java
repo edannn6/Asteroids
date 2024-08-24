@@ -116,9 +116,9 @@ public class Asteroids extends JPanel{
                 trySpawnPowerUp();
                 trySpawnUFO(level);
 
-                if (NoObj(ship)){//lastLives > lives) {//if the amount of lives has decreased then then there is no ship!
+                if (NoObj(ship)){
                     if (delay.life < 0) {
-                        if (lives > 0) {//it muse be respawned after 1 second if there are lives left
+                        if (lives > 0) {//it must be respawned after 1 second if there are lives left
                             delay.life = 60;
                             ship = new Ship(utilities.SpaceFrame.width/2, utilities.SpaceFrame.height/2,0);
                             objects.add(ship);//create a ship
