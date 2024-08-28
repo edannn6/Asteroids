@@ -7,6 +7,7 @@ import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Objects;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Asteroids extends JPanel{
@@ -26,6 +27,7 @@ public class Asteroids extends JPanel{
     public static int score = 0;
     //private variables for recording the level/knowing when to start a new level
     private int level;
+    private String levelType;
     private boolean anyRocks = true;
     //for showing the place in score table
     private int rank = -1;
@@ -76,7 +78,6 @@ public class Asteroids extends JPanel{
         particles = new CopyOnWriteArrayList<>();
 
         //used for the gameloop
-        long lastTime;
         final int idealFps = 60;
         final long optimalTime = 1000000000 / idealFps;
 
@@ -100,23 +101,21 @@ public class Asteroids extends JPanel{
 
         Ship ship = new Ship(utilities.SpaceFrame.width/2, utilities.SpaceFrame.height/2,0);
         objects.add(ship);//create a ship
-        spawnRocks(ship);//create rocks
+        setupNewLevel(ship);//create rocks
 
         //objects.add(new Friendly(utilities.SpaceFrame.width/4, utilities.SpaceFrame.height/4,0));//create a ship
         objects.add(new Friendly(500, 500,0));//create a ship
-        //objects.add(new Egg(300,300));
         //objects.add(new SpaceWorm(300,300,0));
         objects.add(new MotherShip(500, 500,0,3));//create a ship
         while (isRunning) {//do until game is over
-            long current = System.nanoTime();//the current time
-            lastTime = current; //update last time
+            long lastTime =  System.nanoTime();//the current time
 
             if(inGame) {
                 tryNewLevel(anyRocks, delay, ship);
                 trySpawnPowerUp();
                 trySpawnUFO(level);
 
-                if (NoObj(ship)){
+                if (objects.contains(ship)){
                     if (delay.life < 0) {
                         if (lives > 0) {//it must be respawned after 1 second if there are lives left
                             delay.life = 60;
@@ -162,27 +161,21 @@ public class Asteroids extends JPanel{
             rank++;
         }
     }
-    private boolean NoObj(Shape p) {
-//        for (Shape p : objects)
-//            if (p.isShip()) return false;
-//            return true;
-        return !objects.contains(p);
-    }
     //add rocks to game
-    private void spawnRocks(Shape p){
+    private void setupNewLevel(Shape p){
         //The rock must not spawn too close to the ship or the player will lose a life unfairly
-        //find ship
-//        int shipLoc = 0; //the location of the ship in the list
-//        while(!objects.get(shipLoc).isShip() && shipLoc < objects.size()-1){
-//            shipLoc++;
-//        }
+        removeEggs();
 
-        if(level%10 == 0){//every 10 levels spawn 1 'boss' rock instead of many smaller rocks
+        setLevelType();
+
+        if(Objects.equals(levelType, "standard")){
             placeObj(p, new Rock(0,0,0,0, 16));
         }
         else {//every normal level gets harder each time. The amount of rocks in a level is the level number + 2
+            boolean egg = false;
             for (int i = 0; i < level + 2; i++) {//create rocks
-                if(Math.random() < 0.05){
+                if(!egg && Math.random() < 0.5){
+                    egg = true;
                     placeObj(p, new Egg(0,0));
                 }
                 else {
@@ -191,9 +184,19 @@ public class Asteroids extends JPanel{
                 }
             }
         }
-
-
-        //objects.add(new PowerUp(Math.random()*utilities.SpaceFrame.width,Math.random()*utilities.SpaceFrame.height));
+    }
+    private void setLevelType(){
+        //every 10 levels spawn 1 'boss' rock instead of many smaller rocks
+        if(level%10 == 0){
+            levelType = "bigrock";
+        }
+        else if (level%5 == 0){
+            levelType = "mothership";
+        }
+        else
+        {
+            levelType = "standard";
+        }
     }
     //place the rock in a safe enough place for the player
     private void placeObj(Shape s, Shape p){
@@ -227,16 +230,17 @@ public class Asteroids extends JPanel{
         if (!anyRocks) {//if there are no rocks then the level is won. Start the next level after 1 second
             if (delay.level < 0) {
                 level++;
-                removeEggs();
-                spawnRocks(s);
+                setupNewLevel(s);
                 delay.level = 60;
             } else {
                 delay.level--;
             }
         }
     }
+
+
     private void trySpawnUFO(int level){
-        if(level % 5 != 0 && Math.random()*18000 < 10+level){
+        if(Objects.equals(levelType, "standard") && Math.random()*18000 < 10+level){
             double x;
             double y;
             if(Math.random()> 0.5){

@@ -4,46 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="886fb16b-e6fe-4016-9527-a4cbd7fc3bcc" name="Default Changelist" comment="edited comment">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="886fb16b-e6fe-4016-9527-a4cbd7fc3bcc" name="Default Changelist" comment="created new branch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Ammo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Ammo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AsteroidsScores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AsteroidsScores.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Asteroids.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Asteroids.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Debris.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Debris.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Delay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Delay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Dock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Dock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Egg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Egg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/EliteUFO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/EliteUFO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/EnemyBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/EnemyBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Friendly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Friendly.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/LifeUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/LifeUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/MotherShip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/MotherShip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/NpcShip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/NpcShip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/PlayGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/PlayGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/PowerType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/PowerType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/PowerUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/PowerUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/RapidUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/RapidUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Rock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Rock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/ScatterUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/ScatterUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Ship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Skin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Skin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/SpaceCraft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/SpaceCraft.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/SpaceWorm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/SpaceWorm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Tail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Tail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/UFO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/UFO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/UFOa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/UFOa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/UFOb.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/UFOb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/UFOc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/UFOc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/ally.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/ally.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/dust.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/dust.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/wormHead.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/wormHead.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/Listeners/ControlListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/Listeners/ControlListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/Listeners/GameMouseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/Listeners/GameMouseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/utilities/SpaceFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/utilities/SpaceFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/Asteroids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/Asteroids.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +148,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -285,15 +256,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.PlayGame.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/edanb/Documents/Projects/JavaProjects/Asteroids&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.PlayGame.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "august",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/edanb/Documents/Projects/JavaProjects/Asteroids"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="PlayGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AsteroidsGame.PlayGame" />
@@ -334,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724538248880</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created new branch">
+      <option name="closed" value="true" />
+      <created>1724874156247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724874156247</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -398,7 +377,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edited comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited comment" />
+    <MESSAGE value="created new branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="created new branch" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/AsteroidsGame/PlayGame.java">
