@@ -115,7 +115,7 @@ public class Asteroids extends JPanel{
                 trySpawnPowerUp();
                 trySpawnUFO(level);
 
-                if (objects.contains(ship)){
+                if (!objects.contains(ship)){
                     if (delay.life < 0) {
                         if (lives > 0) {//it must be respawned after 1 second if there are lives left
                             delay.life = 60;
@@ -168,7 +168,7 @@ public class Asteroids extends JPanel{
 
         setLevelType();
 
-        if(Objects.equals(levelType, "standard")){
+        if(Objects.equals(levelType, "bigrock")){
             placeObj(p, new Rock(0,0,0,0, 16));
         }
         else {//every normal level gets harder each time. The amount of rocks in a level is the level number + 2

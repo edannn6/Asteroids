@@ -33,18 +33,6 @@ public abstract class Shape {
     }
 
     void wrap() {//wrap around the screen. When an object moves off the screen it should appear on the other side
-//        if (this.x < 0){
-//            this.x = 800;
-//        }
-//        else if (this.x > 800){
-//            this.x = 0;
-//        }
-//        if (this.y < 0){
-//            this.y = 580;
-//        }
-//        else if (this.y > 580){
-//            this.y = 0;
-//        }
         if (x < 0) {
             x += xBound;//800
         } else
