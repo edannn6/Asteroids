@@ -32,6 +32,23 @@ public abstract class SpaceCraft extends Shape {
         //dir = ((dir)+Math.PI)%(Math.PI*2)-Math.PI;
         cooldowns();
     }
+    void fire(){
+        if(cooldown <= 0) {
+            makeBullet(0);
+            if (scatter > 0) {
+                makeBullet(0.2);
+                makeBullet(-0.2);
+            }
+            if (rapid > 0)
+                cooldown = 4;
+            else
+                cooldown = 15; // cannot shoot for this many ticks
+        }
+    }
+
+    void makeBullet(double ang){
+
+    }
     void cooldowns(){
         if(cooldown > 0)
             cooldown--;//the cooldown for the gun

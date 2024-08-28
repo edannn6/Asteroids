@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="886fb16b-e6fe-4016-9527-a4cbd7fc3bcc" name="Default Changelist" comment="fixed bug with player spawning and bug with level type">
+    <list default="true" id="886fb16b-e6fe-4016-9527-a4cbd7fc3bcc" name="Default Changelist" comment="player now spawns with immunity if on top of other collidable objects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AsteroidsScores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AsteroidsScores.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Asteroids.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Asteroids.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Delay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Delay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Friendly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Friendly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/NpcShip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/NpcShip.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Ship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/SpaceCraft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/SpaceCraft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/SpaceWorm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/SpaceWorm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Tail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Tail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/UFO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/UFO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/Asteroids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/Asteroids.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/MotherShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/MotherShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/Friendly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/Friendly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/NpcShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/NpcShip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/SpaceCraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/SpaceCraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/SpaceWorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/SpaceWorm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/UFO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/UFO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724877446897</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="player now spawns with immunity if on top of other collidable objects">
+      <option name="closed" value="true" />
+      <created>1724879677983</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724879677983</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -394,12 +411,24 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edited comment" />
     <MESSAGE value="created new branch" />
     <MESSAGE value="optimised frame delay&#10;improved how level type is decided&#10;number of eggs per level capped at 1" />
     <MESSAGE value="fixed bug with player spawning and bug with level type" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug with player spawning and bug with level type" />
+    <MESSAGE value="player now spawns with immunity if on top of other collidable objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="player now spawns with immunity if on top of other collidable objects" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/AsteroidsGame/PlayGame.java">

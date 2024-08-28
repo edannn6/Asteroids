@@ -45,7 +45,6 @@ public class SpaceWorm extends NpcShip{
         super.paint(g);
         tail.paint(g);
     }
-    void fire(){}
     void getTarget(){
         double closest_dist = Integer.MAX_VALUE;
         for (Shape p: Asteroids.objects) {

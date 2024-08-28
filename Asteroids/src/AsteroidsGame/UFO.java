@@ -27,15 +27,14 @@ public class UFO extends NpcShip {
         }
         turnTo(tarAng);
         smartMove(tarAng);
-        fire();
+        if(cooldown <= 0 && Asteroids.objects.contains(target)&& Math.abs(getDirection(target.x,target.y,0)) < 0.09){//shoot if pointing at
+            fire();
+        }
         wrap();
     }
-
-    void fire(){
-        if(cooldown <= 0 && Asteroids.objects.contains(target)&& Math.abs(getDirection(target.x,target.y,0)) < 0.09){//shoot if pointing at
-            cooldown = 15;
-            Asteroids.objects.add(new EnemyBullet(x+Math.sin(dir)*radius, y-Math.cos(dir)*radius, dir));
-        }
+    @Override
+    void makeBullet(double ang) {
+        Asteroids.objects.add(new EnemyBullet(x+Math.sin(dir)*radius, y-Math.cos(dir)*radius, dir+ang));
     }
 
     @Override

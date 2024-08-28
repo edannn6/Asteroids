@@ -109,7 +109,6 @@ public abstract class NpcShip extends SpaceCraft{
         //g.drawOval((int) (x - s * 5), (int) (y - s * 5), (int) (s * 10), (int) (s * 10));
         skin.draw(g,(int)x,(int)y,thrust);
     }
-    abstract void fire();
     abstract void getTarget();
     abstract boolean isFriend(Shape p);
 }

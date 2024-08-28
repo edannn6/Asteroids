@@ -106,7 +106,7 @@ public class Asteroids extends JPanel{
         //objects.add(new Friendly(utilities.SpaceFrame.width/4, utilities.SpaceFrame.height/4,0));//create a ship
         objects.add(new Friendly(500, 500,0));//create a ship
         //objects.add(new SpaceWorm(300,300,0));
-        objects.add(new MotherShip(500, 500,0,3));//create a ship
+        //objects.add(new MotherShip(500, 500,0,3));//create a ship
         while (isRunning) {//do until game is over
             long lastTime =  System.nanoTime();//the current time
 

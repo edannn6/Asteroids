@@ -32,19 +32,20 @@ public class Ship extends SpaceCraft{
             }
         }else{//otherwise see if colliding with a rock
             for (Shape p : Asteroids.objects) {
-                if (p.isPower()&& Colliding(p)){
-                    if (p.type == 0)
-                        Asteroids.lives++;
-                    else if(p.type == 1)
-                        scatter += 600;
-                    else
-                        rapid += 600;
-                    Asteroids.objects.remove(p);
-                }
-                else if (p !=this && (p.isDebris()||p.isCraft()) && Colliding(p)) {//if colliding with this rock
-                    p.destroy();//destroy the rock
-                    destroy();
-                    break;//ship is destroyed, don't try and destroy more rocks
+                if(Colliding(p)) {
+                    if (p.isPower()) {
+                        if (p.type == 0)
+                            Asteroids.lives++;
+                        else if (p.type == 1)
+                            scatter += 600;
+                        else
+                            rapid += 600;
+                        Asteroids.objects.remove(p);
+                    } else if (p != this && (p.isDebris() || p.isCraft())) {//if colliding with this rock
+                        p.destroy();//destroy the rock
+                        destroy();
+                        break;//ship is destroyed, don't try and destroy more rocks
+                    }
                 }
             }
         }
@@ -69,20 +70,24 @@ public class Ship extends SpaceCraft{
         if(keys[2]){
             dir += 0.09;
         }
-        if(keys[3] && cooldown <= 0){
+        if(keys[3]){
             if(!immune) {//cannot shoot while immune
-                Asteroids.objects.add(new Bullet(x + 10 * s * Math.sin(dir), y - 10 * s * Math.cos(dir), dir));
-
-                if (scatter > 0){
-                    Asteroids.objects.add(new Bullet(x + 10 * s * Math.sin(dir), y - 10 * s * Math.cos(dir), dir+0.2));
-                    Asteroids.objects.add(new Bullet(x + 10 * s * Math.sin(dir), y - 10 * s * Math.cos(dir), dir-0.2));
-                }
-                if(rapid > 0)
-                    cooldown = 4;
-                else
-                    cooldown = 15; // cannot shoot for this many ticks
+                fire();
+//                Asteroids.objects.add(new Bullet(x + 10 * s * Math.sin(dir), y - 10 * s * Math.cos(dir), dir));
+//
+//                if (scatter > 0){
+//                    Asteroids.objects.add(new Bullet(x + 10 * s * Math.sin(dir), y - 10 * s * Math.cos(dir), dir+0.2));
+//                    Asteroids.objects.add(new Bullet(x + 10 * s * Math.sin(dir), y - 10 * s * Math.cos(dir), dir-0.2));
+//                }
+//                if(rapid > 0)
+//                    cooldown = 4;
+//                else
+//                    cooldown = 15; // cannot shoot for this many ticks
             }
         }
+    }
+    void makeBullet(double ang){
+        Asteroids.objects.add(new Bullet(x + 10 * s * Math.sin(dir), y - 10 * s * Math.cos(dir), dir+ang));
     }
     @Override
     public boolean isShip(){

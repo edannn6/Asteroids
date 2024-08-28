@@ -22,7 +22,7 @@ public class Friendly extends NpcShip {
             if(!friend && tarAng < Math.PI/4.0){
                 turnTo(tarAng);
                 if(tarAng < 0.09){
-                    shoot();
+                    fire();
                 }
             }
             else {
@@ -40,22 +40,14 @@ public class Friendly extends NpcShip {
             }
         }
         if(target != null && (!(target.isRock()&&target.size <2)|| dist< 100))
-            fire();
+            if(Asteroids.objects.contains(target)&& Math.abs(getDirection(target.x,target.y,0)) < 0.09){//shoot if pointing at
+                fire();
+            }
         wrap();
     }
-
     @Override
-    void fire() {
-        if(cooldown <= 0 && Asteroids.objects.contains(target)&& Math.abs(getDirection(target.x,target.y,0)) < 0.09){//shoot if pointing at
-            cooldown = 15;
-            Asteroids.objects.add(new Bullet(x+Math.sin(dir)*radius, y-Math.cos(dir)*radius, dir));
-        }
-    }
-    private void shoot(){
-        if(cooldown <= 0){
-            cooldown = 15;
-            Asteroids.objects.add(new Bullet(x+Math.sin(dir)*radius, y-Math.cos(dir)*radius, dir));
-        }
+    void makeBullet(double ang) {
+        Asteroids.objects.add(new Bullet(x+Math.sin(dir)*radius, y-Math.cos(dir)*radius, dir+ang));
     }
     void searchUFO(){
         for(Shape p: Asteroids.objects) {
