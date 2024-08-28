@@ -45,6 +45,12 @@ public class MotherShip extends Debris {
         super.update();
         for (Shape p: Asteroids.objects) {
             if(p !=this && (p.isDebris()||p.isCraft()) && Colliding(p)){
+                if(p.isShip()){//not colliding with ship if immune
+                    Ship s = (Ship) p;
+                    if (s.immune){
+                        continue;
+                    }
+                }
                 if(p.isPower())
                     Asteroids.objects.remove(p);
                 else
@@ -67,7 +73,10 @@ public class MotherShip extends Debris {
             Asteroids.objects.remove(this);
         }
     }
+
+    @Override
     boolean Colliding(Shape p){
+
         if (super.Colliding(p)){
             for (Dock d: docks) {
                 if(d.Colliding(p)){

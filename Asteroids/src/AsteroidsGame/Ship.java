@@ -6,7 +6,7 @@ import java.awt.geom.AffineTransform;
 //the player
 
 public class Ship extends SpaceCraft{
-    private boolean immune = true;//when the ship respawns it might spawn on rocks. Immunity is true until it navigates away, otherwise the player could lose a life unfairly
+    boolean immune = true;//when the ship respawns it might spawn on rocks. Immunity is true until it navigates away, otherwise the player could lose a life unfairly
     Ship(double x, double y, double dir) {
         super(x,y,dir);
         radius = (int)(5 * s);
@@ -25,7 +25,7 @@ public class Ship extends SpaceCraft{
         if (immune) {//if immune check if still should be immune
             immune = false;
             for (Shape p : Asteroids.objects) {
-                if (p.isRock() && distanceTo(p.x, p.y) < p.radius + 25 * s) {//if too close to this rock
+                if ((p.isDebris() && !p.isPower()) && distanceTo(p.x, p.y) < p.radius + 25 * s) {//if too close to this rock
                     immune = true;//still immune
                     break;
                 }
@@ -44,7 +44,6 @@ public class Ship extends SpaceCraft{
                 else if (p !=this && (p.isDebris()||p.isCraft()) && Colliding(p)) {//if colliding with this rock
                     p.destroy();//destroy the rock
                     destroy();
-                    //System.out.println("died");
                     break;//ship is destroyed, don't try and destroy more rocks
                 }
             }

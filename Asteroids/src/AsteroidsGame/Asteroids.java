@@ -179,8 +179,7 @@ public class Asteroids extends JPanel{
                     placeObj(p, new Egg(0,0));
                 }
                 else {
-                    int size = 4;//size of the rock
-                    placeObj(p, new Rock(0,0,0,0,size));
+                    placeObj(p, new Rock(0,0,0,0,4));
                 }
             }
         }

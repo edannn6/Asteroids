@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="886fb16b-e6fe-4016-9527-a4cbd7fc3bcc" name="Default Changelist" comment="optimised frame delay&#10;improved how level type is decided&#10;number of eggs per level capped at 1">
+    <list default="true" id="886fb16b-e6fe-4016-9527-a4cbd7fc3bcc" name="Default Changelist" comment="fixed bug with player spawning and bug with level type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AsteroidsScores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AsteroidsScores.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Asteroids.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Asteroids.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Delay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Delay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Asteroids/AsteroidsGame/Ship.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/Asteroids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/Asteroids.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/MotherShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/MotherShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AsteroidsGame/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsteroidsGame/Ship.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724876227514</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed bug with player spawning and bug with level type">
+      <option name="closed" value="true" />
+      <created>1724877446897</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724877446897</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -389,7 +398,8 @@
     <MESSAGE value="edited comment" />
     <MESSAGE value="created new branch" />
     <MESSAGE value="optimised frame delay&#10;improved how level type is decided&#10;number of eggs per level capped at 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimised frame delay&#10;improved how level type is decided&#10;number of eggs per level capped at 1" />
+    <MESSAGE value="fixed bug with player spawning and bug with level type" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug with player spawning and bug with level type" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/AsteroidsGame/PlayGame.java">
